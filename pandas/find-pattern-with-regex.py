@@ -62,7 +62,7 @@ if __name__ == "__main__":
     df = pd.DataFrame(data)
 
     regex_patterns = [
-        ["Doe", "^J", "son$"],       # Match names that start with 'J' or end with 'son'
+        ["^J|Doe", "son$"],       # Match names that start with 'J' or end with 'son'
         ["^A", "Los Angeles"] # Match names that start with 'A' and city is 'Los Angeles'
     ]
 
